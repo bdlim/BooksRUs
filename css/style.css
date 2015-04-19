@@ -1,0 +1,110 @@
+/*STYLE.CSS*/
+
+#header img {
+  max-width: 60px;
+  margin: 0 0 0 5px;
+  padding: 0;
+  vertical-align: top;
+}
+
+#header h1 {
+  display: inline-block;
+  margin: 5.5px 20px;
+  vertical-align: top;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#navBar {
+  background: #48a3a6;
+  width: auto;
+  text-align: center;
+}
+
+#navBar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/*
+#navBar ul::after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+*/
+
+#navBar ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+#navBar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 45px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+
+/*#navBar ul li a:hover {
+  color: #333333;
+}*/
+
+#navBar ul li a:hover::before {
+  width: 100%;
+}
+
+#navBar ul li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+
+#navBar ul li a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+
+#navBar ul li.last > a::after,
+#navBar ul li:last-child > a::after {
+  display: none;
+}
+
+/*#navBar ul li.active a {
+  color: #333333;
+}*/
+
+#navBar ul li.active a::before {
+  width: 100%;
+}
