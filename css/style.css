@@ -1,5 +1,10 @@
 /*STYLE.CSS*/
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .homeLink a:link,
 a:visited,
 a:hover,
@@ -7,7 +12,34 @@ a:active {
   color: #000000;
 }
 
+.logIn a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000000;
+}
 
+.signUp a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000000;
+}
+
+.logIn,
+.signUp {
+  margin: 15px;
+  float: right;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.inputPair * {
+  display: inline;
+}
+
+#submitButton {
+  margin: 20px 0 0 60px;
+}
 
 #header img {
   max-width: 60px;
@@ -82,7 +114,7 @@ a:active {
   display: block;
   position: absolute;
   right: -3px;
-  top: 19px;
+  top: 27px;
   height: 6px;
   width: 6px;
   background: #ffffff;
@@ -118,8 +150,10 @@ a:active {
   width: 100%;
 }
 
-.mainContent {
-  padding: 10px 30px 0;
+.mainContent,
+.mainContent * {
+  padding: 10px 20px 0;
+  margin: 5px 0;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
@@ -127,7 +161,7 @@ a:active {
 }
 
 .mainContent p {
-  text-size: 16px;
+  font-size: 16px;
 }
 
 footer {
