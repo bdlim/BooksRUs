@@ -22,10 +22,7 @@
 		</ul>
 	</div>
 	<div class=mainContent>
-		<h2>Sign Up Page Is Under Construction...</h2>
-		<p>Our website is under construction, but below is our introduction!</p>
-		<h3>Introduction</h3>
-		<p>Books R Us is an online bookstore tailored to providing children with enjoyable books for them to read. We pride ourselves in providing excellent customer service and educational and inspiring literature for the children's young and developing minds. </p>
+		<h2>Sign Up</h2>
 	  <form id="signUpForm" action="" onsubmit="return validateForm()">
       <div class="inputPair">
         <p>First Name: </p>
