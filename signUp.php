@@ -7,7 +7,7 @@
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/signUpForm.css"/>
-	<script type="text/javascript" src="script/signUpForm.js"></script>
+	<script type="text/javascript" src="js/signUpForm.js"></script>
 </head>
 <body>
 	<!--#include file="header.php"-->
