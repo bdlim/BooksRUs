@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- INDEX.HTML -->
+<!-- ABOUT.PHP -->
 <html lang="en-US">
 <head>
 	<title>Books R Us</title>
@@ -8,20 +8,15 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
-  <div id="header">
-		<a href="index.html"><img src="img/iconBook.jpg" alt="Books R Us Logo"/></a>
-		<a href="index.html" class="homeLink"><h1>Books R Us</h1></a>
-		<a href="signUp.html" class="signUp"><h3>Sign Up</h3></a>
-		<a href="logIn.html" class="logIn"><h3>Log In</h3></a>
-	</div>
+	<!--#include file="header.php"-->
 	<div id="navBar">
 		<ul>
-			<li><a href="index.html">Featured</a></li>
-			<li><a href="topSellers.html">Top Sellers</a></li>
-			<li><a href="classics.html">Classics</a></li>
-			<li><a href="booksByAge.html">Books By Age</a></li>
-			<li><a href="booksByGenre.html">Books By Genre</a></li>
-			<li><a href="sale.html">Sale</a></li>
+			<li><a href="index.php">Featured</a></li>
+			<li><a href="topSellers.php">Top Sellers</a></li>
+			<li><a href="classics.php">Classics</a></li>
+			<li><a href="booksByAge.php">Books By Age</a></li>
+			<li><a href="booksByGenre.php">Books By Genre</a></li>
+			<li><a href="sale.php">Sale</a></li>
 		</ul>
 	</div>
   <div class="mainContent">
@@ -38,9 +33,6 @@
       We believe that reading is one of the best tools for kids to share laughter and joy to the world. But to do that, we want parents to be there to support their child. Parents will actively engage with their child as they shop around the site. Interactions between parent and children will promote a stronger relationship and healthy buying habits.
     </p>
   </div>
-<footer>
-	<a href="about.html">About Us</a>
-	<p>Created by Brandon Lim and Francis Hong</p>
-</footer>
+	<!--#include file="footer.php"-->
 </body>
 </html>

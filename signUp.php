@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- INDEX.HTML -->
+<!-- SIGNUP.PHP -->
 <html lang="en-US">
 <head>
 	<title>Books R Us</title>
@@ -8,20 +8,15 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
-	<div id="header">
-		<a href="index.html"><img src="img/iconBook.jpg" alt="Books R Us Logo"/></a>
-		<a href="index.html" class="homeLink"><h1>Books R Us</h1></a>
-		<a href="signUp.html" class="signUp"><h3>Sign Up</h3></a>
-		<a href="logIn.html" class="logIn"><h3>Log In</h3></a>
-	</div>
+	<!--#include file="header.php"-->
 	<div id="navBar">
 		<ul>
-			<li><a href="index.html">Featured</a></li>
-			<li><a href="topSellers.html">Top Sellers</a></li>
-			<li><a href="classics.html">Classics</a></li>
-			<li><a href="booksByAge.html">Books By Age</a></li>
-			<li><a href="booksByGenre.html">Books By Genre</a></li>
-			<li><a href="sale.html">Sale</a></li>
+			<li><a href="index.php">Featured</a></li>
+			<li><a href="topSellers.php">Top Sellers</a></li>
+			<li><a href="classics.php">Classics</a></li>
+			<li><a href="booksByAge.php">Books By Age</a></li>
+			<li><a href="booksByGenre.php">Books By Genre</a></li>
+			<li><a href="sale.php">Sale</a></li>
 		</ul>
 	</div>
 	<div class=mainContent>
@@ -29,21 +24,22 @@
 		<p>Our website is under construction, but below is our introduction!</p>
 		<h3>Introduction</h3>
 		<p>Books R Us is an online bookstore tailored to providing children with enjoyable books for them to read. We pride ourselves in providing excellent customer service and educational and inspiring literature for the children's young and developing minds. </p>
-	  <form id="signUpForm" action="">
+	  <form id="signUpForm" action="" onSubmit="">
       <div class="inputPair">
         <p>First Name: </p>
-        <input type="text" name="firstName" size="20" />
+        <input type="text" name="firstName" size="30" />
       </div>
       <div class="inputPair">
         <p>Last Name: </p>
-        <input type="text" name="lastName" size="20" />
+        <input type="text" name="lastName" size="30" />
+      </div>
+			<div class="inputPair">
+        <p>Email: </p>
+        <input type="text" name="email" size="30" />
       </div>
       <input id="submitButton" type="submit">
     </form>
   </div>
-<footer>
-	<a href="about.html">About Us</a>
-	<p>Created by Brandon Lim and Francis Hong</p>
-</footer>
+	<!--#include file="footer.php"-->
 </body>
 </html>
