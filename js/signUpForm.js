@@ -20,7 +20,7 @@ function validateForm () {
   } else if (!validateEmail(email)) {
     alert("Invalid Email");
     return false;
-  } else if (!validateEmail(password)) {
+  } else if (!validatePassword(password)) {
     alert("Invalid Password");
     return false;
   } else {
