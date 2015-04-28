@@ -31,17 +31,17 @@ function validateForm () {
 
 function validateFirstName (firstName) {
   var pattern = /^[-'\w\s]+$/i;
-  return (pattern.test(firstName) && (!empty(firstName));
+  return (pattern.test(firstName) && (!empty(firstName)));
 }
 
 function validateLastName (lastName) {
   var pattern = /^[-'\w\s]+$/i;
-  return (pattern.test(lastName) && (!empty(lastName));
+  return (pattern.test(lastName) && (!empty(lastName)));
 }
 
 function validateEmail (email) {
   var pattern = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-  return (pattern.test(email) && (!empty(email));
+  return (pattern.test(email) && (!empty(email)));
 }
 
 function validatePassword (password) {
