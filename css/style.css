@@ -129,13 +129,13 @@
   display: none;
 }
 
-/*#navBar ul li.active a {
+#navBar ul li.active a {
   color: #333333;
-}*/
-
-#navBar ul li.active a::before {
-  width: 100%;
 }
+
+/*#navBar ul li.active a::before {
+  width: 100%;
+}*/
 
 .mainContent,
 .mainContent * {
