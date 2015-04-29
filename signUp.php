@@ -13,12 +13,11 @@
 	<!--#include file="header.php"-->
 	<div id="navBar">
 		<ul>
-			<li><a href="index.php">Featured</a></li>
+			<li><a href="index.php">Home</a></li>
+			<li><a href="catalogue.php">Catalogue</a></li>
 			<li><a href="topSellers.php">Top Sellers</a></li>
-			<li><a href="classics.php">Classics</a></li>
 			<li><a href="booksByAge.php">Books By Age</a></li>
 			<li><a href="booksByGenre.php">Books By Genre</a></li>
-			<li><a href="sale.php">Sale</a></li>
 		</ul>
 	</div>
 	<div class=mainContent>
@@ -26,19 +25,23 @@
 	  <form id="signUpForm" action="" onsubmit="return validateForm()">
       <div class="inputPair">
         <p>First Name: </p>
-        <input type="text" name="firstName" size="30" required />
+        <input type="text" name="firstName" size="30" />
+				<p id="firstNameError"></p>
       </div>
       <div class="inputPair">
         <p>Last Name: </p>
-        <input type="text" name="lastName" size="30" required />
+        <input type="text" name="lastName" size="30" />
+				<p id="lastNameError"></p>
       </div>
 			<div class="inputPair">
         <p>Email: </p>
-        <input type="text" name="email" size="30" required />
+        <input type="text" name="email" size="30" />
+				<p id="emailError"></p>
       </div>
 			<div class="inputPair">
 				<p>Password: </p>
-				<input type="password" name="password" size="30" required  />
+				<input type="password" name="password" size="30" />
+				<p id="passwordError"></p>
 			</div>
       <input id="submitButton" type="submit" value="Register" />
 			<input id="resetButton" type="reset" value="Clear Form" />

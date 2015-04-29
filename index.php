@@ -11,12 +11,11 @@
 	<!--#include file="header.php"-->
 	<div id="navBar">
 		<ul>
-			<li class="active"><a href="index.php">Featured</a></li>
+			<li class="active"><a href="index.php">Home</a></li>
+			<li><a href="catalogue.php">Catalogue</a></li>
 			<li><a href="topSellers.php">Top Sellers</a></li>
-			<li><a href="classics.php">Classics</a></li>
 			<li><a href="booksByAge.php">Books By Age</a></li>
 			<li><a href="booksByGenre.php">Books By Genre</a></li>
-			<li><a href="sale.php">Sale</a></li>
 		</ul>
 	</div>
 	<div class=mainContent>

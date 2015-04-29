@@ -10,23 +10,33 @@ function validateForm () {
   var lastName = registerForm.lastName.value;
   var email = registerForm.email.value;
   var password = registerForm.password.value;
+  var validate = true;
 
   if (!validateFirstName(firstName)) {
-    alert("Invalid First Name");
-    return false;
-  } else if (!validateLastName(lastName)) {
-    alert("Invalid Last Name");
-    return false;
-  } else if (!validateEmail(email)) {
-    alert("Invalid Email");
-    return false;
-  } else if (!validatePassword(password)) {
-    alert("Invalid Password");
-    return false;
+    document.getElementById("firstNameError").innerHTML = "Invalid First Name";
+    validate = false;
   } else {
-    alert("Everything looks good!");
-    return true;
+    document.getElementById("firstNameError").innerHTML = "";
   }
+  if (!validateLastName(lastName)) {
+    document.getElementById("lastNameError").innerHTML = "Invalid Last Name";
+    validate = false;
+  } else {
+    document.getElementById("lastNameError").innerHTML = "";
+  }
+  if (!validateEmail(email)) {
+    document.getElementById("emailError").innerHTML = "Invalid Email";
+    validate = false;
+  } else {
+    document.getElementById("emailError").innerHTML = "";
+  }
+  if (!validatePassword(password)) {
+    document.getElementById("passwordError").innerHTML = "Invalid Password";
+    validate = false;
+  } else {
+    document.getElementById("passwordError").innerHTML = "";
+  }
+  return validate;
 }
 
 function validateFirstName (firstName) {
