@@ -6,8 +6,9 @@
 	<title>Books R Us</title>
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type="text/javascript" src="js/carousel.js"></script>
 </head>
-<body>
+<body onload="startRotation()">
 	<!--#include file="header.php"-->
 	<div id="navBar">
 		<ul>
@@ -19,6 +20,9 @@
 		</ul>
 	</div>
 	<div class=mainContent>
+		<div id="image">
+			<img id="carousel" src="" alt="Books R Us Featured" />
+		</div>
 		<h2>Featured Page Is Under Construction...</h2>
 		<p>Our website is under construction, but below is our introduction!</p>
 		<h3>Introduction</h3>
