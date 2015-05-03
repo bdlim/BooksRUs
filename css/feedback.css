@@ -1,0 +1,13 @@
+/*FEEDBACK.CSS*/
+
+#contact * {
+  padding: 0;
+  margin: 10px 0 10px 5px;
+}
+
+#firstNameError,
+#lastNameError,
+#emailError,
+#messageError {
+  color: red;
+}

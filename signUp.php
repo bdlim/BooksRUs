@@ -8,18 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/signUpForm.css"/>
 	<script type="text/javascript" src="js/signUpForm.js"></script>
+	<script type="text/javascript" src="js/dropdown.js"></script>
 </head>
 <body>
 	<!--#include file="header.php"-->
-	<div id="navBar">
-		<ul>
-			<li><a href="index.php">Home</a></li>
-			<li><a href="catalogue.php">Catalogue</a></li>
-			<li><a href="topSellers.php">Top Sellers</a></li>
-			<li><a href="booksByAge.php">Books By Age</a></li>
-			<li><a href="booksByGenre.php">Books By Genre</a></li>
-		</ul>
-	</div>
 	<div class=mainContent>
 		<h2>Sign Up</h2>
 	  <form id="signUpForm" action="" onsubmit="return validateForm()">

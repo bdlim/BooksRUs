@@ -51,105 +51,71 @@
 
 #navBar {
   background: #48a3a6;
-  width: auto;
-  margin: 0px 80px;
+  margin: 20px 80px;
   text-align: center;
+  display: block;
 }
 
-#navBar ul {
-  list-style: none;
-  margin: 0;
+.menuItems {
   padding: 0;
+  margin: 0;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/*
-#navBar ul::after {
-  content: " ";
+.menuItems li {
+  padding: 0;
+  margin: 0;
+  float: left;
+  list-style: none;
+}
+
+.menuItems li a {
   display: block;
-  font-size: 0;
-  height: 0;
-  clear: both;
+  width: 350px;
+  padding: 4px 10px;
+  margin: 0 1px 0 0;
+  background-color: #48a3a6;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.menuItems li a:hover {
+  background-color: #6aadab;
+}
+
+.menuItems div {
+  position: absolute;
+  background-color: #95dec6;
+  border: 1px solid #1bc67c;
   visibility: hidden;
 }
-*/
 
-#navBar ul li {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-}
-
-#navBar ul li a {
-  color: #ffffff;
+.menuItems div a {
+  display: block;
+  width: 340px;
+  padding: 5px 10px;
+  background-color: #95dec6;
+  color: #1bc67c;
+  text-align: center;
   text-decoration: none;
-  display: block;
-  padding: 15px 45px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  position: relative;
-  -webkit-transition: color .25s;
-  -moz-transition: color .25s;
-  -ms-transition: color .25s;
-  -o-transition: color .25s;
-  transition: color .25s;
+  font-size: 1.2em;
 }
 
-/*#navBar ul li a:hover {
-  color: #333333;
-}*/
-
-#navBar ul li a:hover::before {
-  width: 100%;
+.menuItems div a:hover {
+  background-color: #6aadab;
+  color: #ffffff;
 }
-
-#navBar ul li a::after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: -3px;
-  top: 27px;
-  height: 6px;
-  width: 6px;
-  background: #ffffff;
-  opacity: .5;
-}
-
-#navBar ul li a::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 0;
-  background: #333333;
-  -webkit-transition: width .25s;
-  -moz-transition: width .25s;
-  -ms-transition: width .25s;
-  -o-transition: width .25s;
-  transition: width .25s;
-}
-
-#navBar ul li.last > a::after,
-#navBar ul li:last-child > a::after {
-  display: none;
-}
-
-#navBar ul li.active a {
-  color: #333333;
-}
-
-/*#navBar ul li.active a::before {
-  width: 100%;
-}*/
 
 .mainContent,
 .mainContent * {
   padding: 10px 20px 0;
   margin: 5px 0;
   font-family: "Comic Sans MS", cursive, sans-serif;
+  clear: both;
 }
 
 .mainContent h2 {
