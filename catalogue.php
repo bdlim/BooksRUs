@@ -38,6 +38,7 @@
 						<img src="*SOURCE*" alt="*NAME*" />
 
 						-->
+						<img src="books photo/corduroy.jpg" alt="Corduroy">
 					</td>
 					<td>
 						<!-- PRODUCT NAME and DESCRIPTION
@@ -46,6 +47,9 @@
 						<p>*DESCRIPTION*<p>
 
 						-->
+						<h2>Corduroy</h2>
+						<p>Corduroy is about a small bear that lost its button.
+							Follow the adverture of Cord to find his button!</p>
 					<td>
 						Quantity:
 					</td>
@@ -55,6 +59,7 @@
 						<input type="text" name="*NAME*Quantity" size="3" />
 
 						-->
+						<input type="text" name="Corduroy Quantity" size="3" />
 					</td>
 					<td>
 						<!-- PRICE
@@ -62,6 +67,7 @@
 						*PRICE*
 
 						-->
+						<p>$10.99</p>
 					</td>
 					<td>
 						<!-- REMOVE
@@ -69,6 +75,7 @@
 						<input type="checkbox" name="*NAME*Remove" value="no"/>
 
 						-->
+						<input type="checkbox" name="Corduroy Remove" value="no"/>
 					</td>
 				</tr>
 			</table>
