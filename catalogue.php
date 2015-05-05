@@ -11,10 +11,6 @@
 <body>
 	<!--#include file="header.php"-->
 	<div class=mainContent>
-		<h2>Catalogue Page Is Under Construction...</h2>
-		<p>Our website is under construction, but below is our introduction!</p>
-		<h3>Introduction</h3>
-		<p>Books R Us is an online bookstore tailored to providing children with enjoyable books for them to read. We pride ourselves in providing excellent customer service and educational and inspiring literature for the children's young and developing minds. </p>
 		<form id="orderForm" action="" onclick="">
 			<table summary="catalogue">
 				<tr>
@@ -36,9 +32,8 @@
 						<!-- PRODUCT IMAGE
 
 						<img src="*SOURCE*" alt="*NAME*" />
-
 						-->
-						<img src="books photo/corduroy.jpg" alt="Corduroy">
+						<img src="img/bookPhotos/corduroy.jpg" alt="Corduroy">
 					</td>
 					<td>
 						<!-- PRODUCT NAME and DESCRIPTION
@@ -59,7 +54,7 @@
 						<input type="text" name="*NAME*Quantity" size="3" />
 
 						-->
-						<input type="text" name="Corduroy Quantity" size="3" />
+						<input type="text" name="corduroyQuantity" size="3" />
 					</td>
 					<td>
 						<!-- PRICE
@@ -75,7 +70,7 @@
 						<input type="checkbox" name="*NAME*Remove" value="no"/>
 
 						-->
-						<input type="checkbox" name="Corduroy Remove" value="no"/>
+						<input type="checkbox" name="corduroyRemove" value="no"/>
 					</td>
 				</tr>
 			</table>
