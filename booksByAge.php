@@ -17,7 +17,7 @@
 					<th colspan="2">
 						Product
 					</th>
-					<th colspan="2">
+					<th>
 						Quantity
 					</th>
 					<th>
@@ -45,8 +45,6 @@
 						<h2>Corduroy</h2>
 						<p>Corduroy is about a small bear that lost its button.
 							Follow the adverture of Cord to find his button!</p>
-					<td>
-						Quantity:
 					</td>
 					<td>
 						<!-- QUANTITY
