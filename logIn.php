@@ -11,7 +11,7 @@
 	<script type="text/javascript" src="js/dropdown.js"></script>
 </head>
 <body>
-	<!--#include file="header.php"-->
+	<?php include 'header.php'; ?>
 	<div class=mainContent>
 		<h2>Login</h2>
 		<form id="logInForm" action="" onsubmit="return validateForm()">
@@ -28,6 +28,6 @@
 			<input id="logInButton" type="submit" value="Log In" />
 		</form>
 	</div>
-	<!--#include file="footer.php"-->
+	<?php include 'footer.php'; ?>
 </body>
 </html>

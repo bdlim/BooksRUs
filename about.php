@@ -9,7 +9,7 @@
 	<script type="text/javascript" src="js/dropdown.js"></script>
 </head>
 <body>
-	<!--#include file="header.php"-->
+	<?php include 'header.php'; ?>
   <div class="mainContent">
     <h2>How It Started</h2>
     <p>
@@ -24,6 +24,6 @@
       We believe that reading is one of the best tools for kids to share laughter and joy to the world. But to do that, we want parents to be there to support their child. Parents will actively engage with their child as they shop around the site. Interactions between parent and children will promote a stronger relationship and healthy buying habits.
     </p>
   </div>
-	<!--#include file="footer.php"-->
+	<?php include 'footer.php'; ?>
 </body>
 </html>

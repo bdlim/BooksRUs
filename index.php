@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="js/dropdown.js"></script>
 </head>
 <body onload="startRotation()">
-	<!--#include file="header.php"-->
+	<?php include 'header.php'; ?>
 	<div class=mainContent>
 		<div id="image">
 			<img id="carousel" src="" alt="Books R Us Featured" />
@@ -18,6 +18,6 @@
 		<h3>Introduction</h3>
 		<p>Books R Us is an online bookstore tailored to providing children with enjoyable books for them to read. We pride ourselves in providing excellent customer service and educational and inspiring literature for the children's young and developing minds. </p>
 	</div>
-	<!--#include file="footer.php"-->
+	<?php include 'footer.php'; ?>
 </body>
 </html>

@@ -11,7 +11,7 @@
 	<script type="text/javascript" src="js/dropdown.js"></script>
 </head>
 <body>
-	<!--#include file="header.php"-->
+	<?php include 'header.php'; ?>
 	<div class=mainContent>
 		<h2>Sign Up</h2>
 	  <form id="signUpForm" action="" onsubmit="return validateForm()">
@@ -39,6 +39,6 @@
 			<input id="resetButton" type="reset" value="Clear Form" />
     </form>
   </div>
-	<!--#include file="footer.php"-->
+	<?php include 'footer.php'; ?>
 </body>
 </html>

@@ -9,7 +9,7 @@
 	<script type="text/javascript" src="js/dropdown.js"></script>
 </head>
 <body>
-	<!--#include file="header.php"-->
+	<?php include 'header.php'; ?>
 	<div class=mainContent>
 		<form id="orderForm" action="" onclick="">
 			<table summary="catalogue">
@@ -74,6 +74,6 @@
 			</table>
 		</form>
 	</div>
-	<!--#include file="footer.php"-->
+	<?php include 'footer.php'; ?>
 </body>
 </html>
