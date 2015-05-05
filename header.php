@@ -17,9 +17,9 @@
     <li>
       <a href="catalogue.php" onmouseover="show(`m2`)">Catalogue</a>
       <div id="m2" onmouseover="show(`m2`)">
+        <a href="catalogue.php">All Books</a>
         <a href="topSellers.php">Top Sellers</a>
         <a href="booksByAge.php">Books By Age</a>
-        <a href="booksByGenre.php">Books By Genre</a>
       </div>
     </li>
     <li>

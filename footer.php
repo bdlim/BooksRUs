@@ -11,7 +11,6 @@
 			<li><a href="catalogue.php">Catalogue</a></li>
 			<li><a href="topSellers.php">Top Sellers</a></li>
 			<li><a href="booksByAge.php">Book by Age</a></li>
-			<li><a href="booksByGenre.php">Book by Genre</a></li>
 		</ul>
 	</div>
 	<div class="sitemap">

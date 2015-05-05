@@ -78,7 +78,7 @@
 				</tr>
 				<tr> <!-- the very hungry caterpillar product page -->
 					<td>
-						<img src="img/bookPhotos/HungryCaterpillar.jpg" alt="Hungry Caterpillar Cover">
+						<img src="img/bookPhotos/HungryCaterpillar.JPG" alt="Hungry Caterpillar Cover">
 					</td>
 					<td>
 						<h2>The Very Hungry Caterpillar</h2>
