@@ -16,6 +16,24 @@
   display: inline;
 }
 
+.createdBy {
+  margin: 70px 40px 20px 40px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  display: inline;
+  float: left;
+}
+
+.sitemap {
+  margin: 20px 40px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  display: inline;
+  float: left;
+}
+
+.sitemap li {
+  list-style: none;
+}
+
 #carousel {
   display: block;
   max-width: 50%;
