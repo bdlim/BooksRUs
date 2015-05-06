@@ -26,7 +26,8 @@
 }
 
 #top-header nav ul li#top-spacing{
-  padding: 0 0 0 90%;
+  padding: 0px 50% 0 0;
+  font-size: 14px;
 }
 
 .rightHeader {
@@ -84,14 +85,14 @@
 
 #header img {
   max-width: 60px;
-  margin: 0 0 0 5px;
+  margin: 50px 0 0 40%;
   padding: 0;
   vertical-align: top;
 }
 
 #header h1 {
   display: inline-block;
-  margin: 5.5px 20px;
+  margin: 55.5px 20px 10px 0;
   vertical-align: top;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
@@ -106,7 +107,7 @@
 
 #navBar {
   background: #48a3a6;
-  margin: 20px 80px;
+  margin: 20px 10% 0 10%;
   text-align: center;
   display: block;
 }
