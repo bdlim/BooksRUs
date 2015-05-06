@@ -76,6 +76,20 @@
 						<input type="text" name="greenEggsQuantity" size="3" />
 					</td>
 				</tr>
+				<tr>
+					<td>
+						<p></p>
+					</td>
+					<td>
+						<p></p>
+					</td>
+					<td>
+						<input type="submit" value="Submit Form"  />
+					</td>
+					<td>
+						<input type="reset" value="Clear Form"  />
+					</td>
+				</tr>
 			</table>
 		</form>
 	</div>
