@@ -1,9 +1,5 @@
 /*FEEDBACK.JS*/
 
-function processFeedback () {
-
-}
-
 function validateForm () {
   var feedbackForm = document.getElementById("contact");
   var salutation = feedbackForm.salutation.value;

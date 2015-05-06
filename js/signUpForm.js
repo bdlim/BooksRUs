@@ -1,9 +1,5 @@
 /*SIGNUPFORM.JS*/
 
-function processRegister () {
-
-}
-
 function validateForm () {
   var registerForm = document.getElementById("signUpForm");
   var firstName = registerForm.firstName.value;

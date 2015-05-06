@@ -1,14 +1,10 @@
 /*LOGINFORM.JS*/
 
-function processSignOn () {
-
-}
-
 function validateForm () {
   var signOnForm = document.getElementById("logInForm");
   var email = signOnForm.email.value;
   var password = signOnForm.password.value;
-  validate = true;
+  var validate = true;
 
   if (!validateEmail(email)) {
     document.getElementById("emailError").innerHTML = "Invalid Email";
