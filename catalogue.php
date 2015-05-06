@@ -13,7 +13,7 @@
 <body>
 	<?php include 'header.php'; ?>
 	<div class=mainContent>
-		<form id="orderForm" action="" onsubmit="return validateOrder()">
+		<form id="orderForm" action="php/processOrder.php" onsubmit="return validateOrder()">
 			<table summary="catalogue">
 				<tr>
 					<th colspan="2">
