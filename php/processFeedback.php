@@ -30,7 +30,7 @@ $display =
 echo $display;
 
 $fileVar = fopen("../data/feedback.txt", "a")
-  or die($php_errormsg);
+  or die("Error: Could not open the log file.");
 fwrite($fileVar, "\n------------------------------------\n")
   or die("Error: Could not write to the log file.");
 fwrite($fileVar, "Date received: ".date("jS \of F, Y \a\\t H:i:s\n"))
