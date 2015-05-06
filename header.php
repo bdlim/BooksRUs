@@ -1,10 +1,10 @@
 <!-- HEADER.PHP -->
 
-<span id="top-header">
-  <a href="signUp.php" class="signUp"><h5>Sign Up</h5></a>
-  <a href="logIn.php" class="logIn"><h5>Log In</h5></a>
-</span>
 <div id="header">
+  <div id="top-header" class="rightHeader">
+    <a href="signUp.php" class="signUp"><h5>Sign Up</h5></a>
+    <a href="logIn.php" class="logIn"><h5>Log In</h5></a>
+  </div>
   <a href="index.php"><img src="img/iconBook.jpg" alt="Books R Us Logo"/></a>
   <a href="index.php"><h1>Books R Us</h1></a>
   <?php

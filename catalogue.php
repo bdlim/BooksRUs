@@ -6,12 +6,14 @@
 	<title>Books R Us</title>
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/orderForm.css"/>
 	<script type="text/javascript" src="js/dropdown.js"></script>
+	<script type="text/javascript" src="js/orderForm.js"></script>
 </head>
 <body>
 	<?php include 'header.php'; ?>
 	<div class=mainContent>
-		<form id="orderForm" action="" onclick="">
+		<form id="orderForm" action="" onsubmit="return validateOrder()">
 			<table summary="catalogue">
 				<tr>
 					<th colspan="2">
@@ -37,7 +39,7 @@
 						<p>$15.99</p>
 					</td>
 					<td>
-						<input type="text" name="motherQuantity" size="3" />
+						<input type="number" name="motherQuantity" min="0" value="0"/>
 					</td>
 				</tr>
 				<tr> <!-- brownbear product page -->
@@ -53,7 +55,7 @@
 						<p>$7.99</p>
 					</td>
 					<td>
-						<input type="text" name="brownBearQuantity" size="3" />
+						<input type="number" name="brownBearQuantity" min="0" value="0"/>
 					</td>
 				</tr>
 				<tr> <!-- chickachicka product page -->
@@ -61,7 +63,7 @@
 						<img src="img/bookPhotos/chicka.jpg" alt="Chika Cover">
 					</td>
 					<td>
-						<h2>Chika Chika BOOM BOOM</h2>
+						<h2>Chicka Chicka BOOM BOOM</h2>
 						<h4>by Bill Martin Jr. and John Archambault</h4>
 						<p>Follow the crazy adventure in the jungle.</p>
 					</td>
@@ -69,7 +71,7 @@
 						<p>$9.99</p>
 					</td>
 					<td>
-						<input type="text" name="chikaQuantity" size="3" />
+						<input type="number" name="chickaQuantity" min="0" value="0"/>
 					</td>
 				</tr>
 				<tr> <!-- corduroy product page -->
@@ -86,7 +88,7 @@
 						<p>$10.99</p>
 					</td>
 					<td>
-						<input type="text" name="corduroyQuantity" size="3" />
+						<input type="number" name="corduroyQuantity" min="0" value="0"/>
 					</td>
 				</tr>
 				<tr> <!-- greeneggsandham product page -->
@@ -102,7 +104,7 @@
 						<p>$15.99</p>
 					</td>
 					<td>
-						<input type="text" name="greenEggsQuantity" size="3" />
+						<input type="number" name="greenEggsQuantity" min="0" value="0"/>
 					</td>
 				</tr>
 				<tr> <!-- holes product page -->
@@ -118,7 +120,7 @@
 						<p>$7.99</p>
 					</td>
 					<td>
-						<input type="text" name="holesQuantity" size="3" />
+						<input type="number" name="holesQuantity" min="0" value="0"/>
 					</td>
 				</tr>
 				<tr> <!-- james and the giant peach product page -->
@@ -134,7 +136,7 @@
 						<p>$10.99</p>
 					</td>
 					<td>
-						<input type="text" name="peachQuantity" size="3" />
+						<input type="number" name="peachQuantity" min="0" value="0"/>
 					</td>
 				</tr>
 				<tr> <!-- the giving tree product page -->
@@ -150,12 +152,12 @@
 						<p>$15.99</p>
 					</td>
 					<td>
-						<input type="text" name="givingTreeQuantity" size="3" />
+						<input type="number" name="givingTreeQuantity" min="0" value="0"/>
 					</td>
 				</tr>
 				<tr> <!-- the very hungry caterpillar product page -->
 					<td>
-						<img src="img/bookPhotos/HungryCaterpillar.JPG" alt="Hungry Caterpillar Cover">
+						<img src="img/bookPhotos/HungryCaterpillar.jpg" alt="Hungry Caterpillar Cover">
 					</td>
 					<td>
 						<h2>The Very Hungry Caterpillar</h2>
@@ -166,7 +168,7 @@
 						<p>$11.99</p>
 					</td>
 					<td>
-						<input type="text" name="givingTreeQuantity" size="3" />
+						<input type="number" name="hungryCaterpillarQuantity" min="0" value="0"/>
 					</td>
 				</tr>
 				<tr> <!-- Where the SideWalk Ends product page -->
@@ -182,7 +184,7 @@
 						<p>$13.99</p>
 					</td>
 					<td>
-						<input type="text" name="corduroyQuantity" size="3" />
+						<input type="number" name="sidewalkEndsQuantity" min="0" value="0"/>
 					</td>
 				</tr>
 				<tr>
@@ -190,13 +192,13 @@
 						<p></p>
 					</td>
 					<td>
-						<p></p>
+						<p id="emptyOrder"></p>
 					</td>
 					<td>
-						<input type="submit" value="Submit Form"  />
+						<input type="submit" value="Submit Order"  />
 					</td>
 					<td>
-						<input type="reset" value="Clear Form"  />
+						<input type="reset" value="Clear Order"  />
 					</td>
 				</tr>
 			</table>
