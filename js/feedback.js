@@ -5,13 +5,20 @@ function processFeedback () {
 }
 
 function validateForm () {
-  var registerForm = document.getElementById("contact");
-  var firstName = registerForm.firstName.value;
-  var lastName = registerForm.lastName.value;
-  var email = registerForm.email.value;
-  var message = registerForm.message.value;
+  var feedbackForm = document.getElementById("contact");
+  var salutation = feedbackForm.salutation.value;
+  var firstName = feedbackForm.firstName.value;
+  var lastName = feedbackForm.lastName.value;
+  var email = feedbackForm.email.value;
+  var message = feedbackForm.message.value;
   var validate = true;
 
+  if (!validateSalutation(salutation)) {
+    document.getElementById("salutationError").innerHTML ="Invalid Salutation";
+    validate = false;
+  } else {
+    document.getElementById("salutationError").innerHTML = "";
+  }
   if (!validateFirstName(firstName)) {
     document.getElementById("firstNameError").innerHTML = "Invalid First Name";
     validate = false;
@@ -39,14 +46,16 @@ function validateForm () {
   return validate;
 }
 
+function validateSalutation (salutation) {
+  return (salutation != " ");
+}
+
 function validateFirstName (firstName) {
-  var pattern = /^[-'\w\s]+$/i;
-  return (pattern.test(firstName) && (!empty(firstName)));
+  return validateText(firstName);
 }
 
 function validateLastName (lastName) {
-  var pattern = /^[-'\w\s]+$/i;
-  return (pattern.test(lastName) && (!empty(lastName)));
+  return validateText(lastName);
 }
 
 function validateEmail (email) {
@@ -55,8 +64,12 @@ function validateEmail (email) {
 }
 
 function validateMessage (message) {
+  return (!empty(message));
+}
+
+function validateText (text) {
   var pattern = /^[-'\w\s]+$/i;
-  return (pattern.test(message) && (!empty(message)));
+  return (pattern.test(text) && (!empty(text)));
 }
 
 

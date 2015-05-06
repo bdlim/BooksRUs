@@ -3,7 +3,7 @@
 <footer>
 	<div class="createdBy">
 		<p>Created by Brandon Lim and Francis Hong</p>
-		<p>Email: customerservice@booksrus.com<p>
+		<p>Email: customerservice@booksrus.com</p>
 	</div>
 	<div class="sitemap">
 		<h3>SHOP</h3>

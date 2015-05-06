@@ -14,7 +14,18 @@
 	<?php include 'header.php'; ?>
   <div class="mainContent">
     <h2>Contact Us</h2>
-    <form id="contact" action="" onsubmit="return validateForm()">
+    <form id="contact" action="php/processFeedback.php" onsubmit="return validateForm()" method="post">
+			<div class="inputPair">
+				<p>Salutation: </p>
+				<select name="salutation">
+					<option value=" "> </option>
+					<option value="Mrs.">Mrs.</option>
+					<option value="Ms.">Ms.</option>
+					<option value="Mr.">Mr.</option>
+					<option value="Dr.">Dr.</option>
+				</select>
+				<p id="salutationError"></p>
+			</div>
       <div class="inputPair">
         <p>First Name: </p>
         <input type="text" name="firstName" size="30" />
@@ -35,6 +46,10 @@
         <textarea name="message" rows="6" cols="30"></textarea>
         <p id="messageError"></p>
       </div>
+			<div class="inputPair">
+				<input type="checkbox" name="copy" value="yes" />
+				<p>I want copy sent to my email</p>
+			</div>
       <input id="submitButton" type="submit" value="Submit Feedback" />
       <input id="resetButton" type="reset" value="Clear Form" />
     </form>
