@@ -3,18 +3,13 @@
 <span id="top-header">
   <a href="signUp.php" class="signUp"><h5>Sign Up</h5></a>
   <a href="logIn.php" class="logIn"><h5>Log In</h5></a>
-</div>
+</span>
 <div id="header">
   <a href="index.php"><img src="img/iconBook.jpg" alt="Books R Us Logo"/></a>
   <a href="index.php"><h1>Books R Us</h1></a>
-<<<<<<< Updated upstream
-=======
-  <a href="signUp.php" class="rightHeader"><h3>Sign Up</h3></a>
-  <a href="logIn.php" class="rightHeader"><h3>Log In</h3></a>
   <?php
     echo "<h3 class='rightHeader'>Welcome! Today is ".date("l, jS \of F Y")." at ".date("h:i A");
   ?>
->>>>>>> Stashed changes
 </div>
 <div id="navBar" onmouseout="hide()">
   <ul class=menuItems>
