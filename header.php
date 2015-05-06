@@ -1,9 +1,14 @@
 <!-- HEADER.PHP -->
 
-<span id="top-header">
-  <a href="signUp.php" class="signUp"><h5>Sign Up</h5></a>
-  <a href="logIn.php" class="logIn"><h5>Log In</h5></a>
-</span>
+<div id="top-header">
+  <nav>
+    <ul>
+      <li id="top-spacing"><h5> </h5></li>
+      <li><a href="signUp.php"><h5>Sign Up</h5></a></li>
+      <li><a href="logIn.php"><h5>Log In</h5></a></li>
+    </ul>
+  </nav>
+</div>
 <div id="header">
   <a href="index.php"><img src="img/iconBook.jpg" alt="Books R Us Logo"/></a>
   <a href="index.php"><h1>Books R Us</h1></a>

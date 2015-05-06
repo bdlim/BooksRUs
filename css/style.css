@@ -3,6 +3,30 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Comic Sans MS";
+}
+
+#top-header{
+  background-color: #CCC6C7;
+  list-style: none;
+}
+
+#top-header li {
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+}
+
+#top-header nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+#top-header nav ul li a:hover{
+  color: black;
+}
+
+#top-header nav ul li#top-spacing{
+  padding: 0 0 0 90%;
 }
 
 .rightHeader {
@@ -36,6 +60,15 @@
 
 .sitemap li {
   list-style: none;
+}
+
+.sitemap ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+.sitemap ul li a:hover{
+  color: #48a3a6;
 }
 
 #carousel {
@@ -155,8 +188,4 @@ footer {
   font-family: "Comic Sans MS", cursive, sans-serif;
   margin: 100px 0 40px 0;
   padding: 0 30px;
-}
-
-#top-header{
-  background-color: #48a3a6;
 }
